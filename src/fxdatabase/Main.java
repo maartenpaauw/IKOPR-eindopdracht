@@ -43,5 +43,7 @@ public class Main extends Application {
         }
 
         controller.getX();
+
+        primaryStage.setOnCloseRequest(we -> this.controller.close());
     }
 }

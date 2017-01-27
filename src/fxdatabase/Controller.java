@@ -31,6 +31,11 @@ public class Controller
         this.model.notifyObservers();
     }
 
+    public void close()
+    {
+        this.database.close();
+    }
+
     private void setX(int x)
     {
         this.database.updateX(x);
