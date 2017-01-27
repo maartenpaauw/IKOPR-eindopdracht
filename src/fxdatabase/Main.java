@@ -1,4 +1,4 @@
-package fxobserver;
+package fxdatabase;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -27,12 +27,14 @@ public class Main extends Application {
 
         for(int teller = 1; teller < 5; teller++)
         {
-            VeldView veldView = new VeldView(teller);
+            int x = this.model.getX();
+
+            VeldView veldView = new VeldView(teller, x);
             Stage    stage    = new Stage();
 
             this.model.registerObserver(veldView);
 
-            stage.setTitle("Teller - " + Integer.toString(teller));
+            stage.setTitle("Teller - " + Integer.toString(teller) + "x");
             stage.setScene(new Scene(veldView, 150, 150));
             stage.setResizable(false);
 
