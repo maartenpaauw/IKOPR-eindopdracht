@@ -81,6 +81,9 @@ public class Main extends Application {
 
             // Zorg ervoor dat de stage zichtbaar wordt.
             stage.show();
+
+            // Zorg ervoor dat bij het sluiten de observer verwijdert wordt.
+            stage.setOnCloseRequest(we -> this.model.removeObserver(veldView));
         }
 
         // Vul alle tekstvelden in met de waarde X uit de dabase.
