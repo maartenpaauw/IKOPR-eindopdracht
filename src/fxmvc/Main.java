@@ -21,9 +21,16 @@ public class Main extends Application {
     // Maak een prive attrivuut met de Java FX scene object aan met daarin de view.
     private Scene scene = new Scene(view, 220, 50);
 
-    // Zorg ervoor dat de JavaFX applicatie gestart wordt.
+    /**
+     * Zorg ervoor dat de JavaFX applicatie gestart wordt.
+     *
+     * @param args Alle argumenten.
+     */
     public static void main(String[] args) { launch(args); }
 
+    /**
+     * Zorg ervoor dat de Java FX applicatie zichtbaar wordt.
+     */
     @Override
     public void start(Stage primaryStage) throws Exception
     {
