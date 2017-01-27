@@ -27,9 +27,7 @@ public class Main extends Application {
 
         for(int teller = 1; teller < 5; teller++)
         {
-            int x = this.model.getX();
-
-            VeldView veldView = new VeldView(teller, x);
+            VeldView veldView = new VeldView(teller);
             Stage    stage    = new Stage();
 
             this.model.registerObserver(veldView);
@@ -43,5 +41,7 @@ public class Main extends Application {
 
             stage.show();
         }
+
+        controller.getX();
     }
 }

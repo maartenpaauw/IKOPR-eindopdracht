@@ -10,10 +10,10 @@ public class VeldView extends HBox implements Observer {
     private TextField tekst = new TextField();
     private int       teller;
 
-    public VeldView(int teller, int x)
+    public VeldView(int teller)
     {
         this.teller = teller;
-        this.setTekst(x * teller);
+        this.setTekst(teller);
         this.setPadding(new Insets(10));
 
         this.tekst.setPrefSize(130, 130);

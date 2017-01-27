@@ -25,7 +25,7 @@ public class Controller
         });
     }
 
-    private void getX()
+    public void getX()
     {
         this.model.setX(database.getX());
         this.model.notifyObservers();
