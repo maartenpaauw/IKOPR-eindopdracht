@@ -1,5 +1,7 @@
+// De package.
 package fxdatabase;
 
+// Alle imports die deze klasse nodig heeft.
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.TextField;

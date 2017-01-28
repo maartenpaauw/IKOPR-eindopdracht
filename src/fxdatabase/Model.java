@@ -1,5 +1,7 @@
+// De package
 package fxdatabase;
 
+// Alle imports die deze klasse nodig heeft.
 import java.util.ArrayList;
 
 // De klasse model die functioneerd als subject van het observer pattern.
