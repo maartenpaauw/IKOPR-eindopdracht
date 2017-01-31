@@ -16,13 +16,6 @@ public class Model {
     }
 
     /**
-     * Een constructor die de x waarde aanpast naar het opgegeven getal.
-     *
-     * @param x De waarde voor X als integer.
-     */
-    public Model(int x) { this.x = x; }
-
-    /**
      * Verkrijg de waarde X.
      *
      * @return X als integer.

@@ -54,7 +54,11 @@ public class VeldView extends HBox implements Observer {
     @Override
     public void update(int x)
     {
-        this.setTekst(x * this.teller);
+        // Bereken de waarde.
+        int waarde = x * this.teller;
+
+        // Update het tekstveld.
+        this.setTekst(waarde);
     }
 
     /**
