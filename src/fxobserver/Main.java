@@ -62,7 +62,7 @@ public class Main extends Application {
             Stage stage = new Stage();
 
             // Voeg de view toe aan de lijst met observers.
-            this.model.registerObserver(veldView);
+            this.controller.registerObserver(veldView);
 
             // Geef de stage een titel.
             stage.setTitle("Teller - " + Integer.toString(teller) + "x");
@@ -83,7 +83,7 @@ public class Main extends Application {
             stage.show();
 
             // Zorg ervoor dat bij het sluiten de observer verwijdert wordt.
-            stage.setOnCloseRequest(we -> this.model.removeObserver(veldView));
+            stage.setOnCloseRequest(we -> this.controller.removeObserver(veldView));
         }
     }
 }

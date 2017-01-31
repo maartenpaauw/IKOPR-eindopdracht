@@ -69,6 +69,17 @@ public class Controller
     }
 
     /**
+     * Sla de X op in de database.
+     *
+     * @param x
+     */
+    private void setX(int x)
+    {
+        // Sla het opgegeven variabele x op in de database.
+        this.database.updateX(x);
+    }
+
+    /**
      * Zorg ervoor dat de database connectie gesloten kan worden.
      */
     public void close()
@@ -78,12 +89,24 @@ public class Controller
     }
 
     /**
-     * Sla de X op in de database.
-     * @param x
+     * Registeer de observer bij de model.
+     *
+     * @param observer Observer als Observer object.
      */
-    private void setX(int x)
+    public void registerObserver(Observer observer)
     {
-        // Sla het opgegeven variabele x op in de database.
-        this.database.updateX(x);
+        // Registreer de observer bij de model.
+        this.model.registerObserver(observer);
+    }
+
+    /**
+     * Verwijder de observer bij de model.
+     *
+     * @param observer Observer als Observer object.
+     */
+    public void removeObserver(Observer observer)
+    {
+        // Verwijder de observer bij de model.
+        this.model.removeObserver(observer);
     }
 }

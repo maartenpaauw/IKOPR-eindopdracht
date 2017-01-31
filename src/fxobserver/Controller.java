@@ -44,4 +44,26 @@ public class Controller
             this.model.notifyObservers();
         });
     }
+
+    /**
+     * Registeer de observer bij de model.
+     *
+     * @param observer Observer als Observer object.
+     */
+    public void registerObserver(Observer observer)
+    {
+        // Registreer de observer bij de model.
+        this.model.registerObserver(observer);
+    }
+
+    /**
+     * Verwijder de observer bij de model.
+     *
+     * @param observer Observer als Observer object.
+     */
+    public void removeObserver(Observer observer)
+    {
+        // Verwijder de observer bij de model.
+        this.model.removeObserver(observer);
+    }
 }
